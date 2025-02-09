@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* CSS Reset (Consider if you need all of these reset) */
 html,
 body,
 ul,
@@ -16,7 +16,7 @@ span {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: large;
+  font-size: large; /* makes all fonts large */
 }
 
 ul,
@@ -24,12 +24,18 @@ li {
   list-style: none;
 }
 
+.headings {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 .container {
   display: grid;
   grid-template-columns: 0.25fr 1fr;
 }
 
-.content-left ul {
+.content-left {
+  padding: 2rem 0 2rem 2rem;
 }
 
 .content-left button {
@@ -45,26 +51,29 @@ li {
 
 .content-right {
   display: grid;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: min-content 1fr;
   gap: 1rem;
+}
+
+.content-right .right-top {
+  padding: 15px 15px 0px 15px;
+  /* convert this to rem later */
 }
 
 .right-top ul {
   display: grid;
   grid-template-columns: 4fr repeat(3, minmax(0, 1fr));
   grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+  gap: 10px;
 }
 
 .right-top input {
-  border: 2px solid red;
   width: 95%;
 }
 
 .right-bottom {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(0, 0.5fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(0, 0.8fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 2.5rem;
 }
@@ -76,9 +85,21 @@ li {
   border: 2px solid green;
 }
 
-.right-sidebar > div,
-.right-sidebar > ul,
-.right-sidebar > p,
-.right-sidebar > a {
-  font-size: 1rem;
+.right-sidebar-container {
+  grid-row-start: 1;
+  grid-row-end: -1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: grid;
+  gap: 1rem;
+}
+
+.right-sidebar > * {
+  padding: 0.5rem;
+  border: 2px solid red;
+}
+
+.Announcements p,
+.Trending p {
+  font-size: 0.75rem;
 }
