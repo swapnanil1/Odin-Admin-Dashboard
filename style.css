@@ -19,14 +19,13 @@ span {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
-
 a {
   color: #ebdbb2;
   text-decoration: none;
 }
 
 a:hover {
-  color: #00a0c6;
+  color: #ba7f64;
   cursor: pointer;
 }
 
@@ -40,7 +39,7 @@ li {
   font-size: 1.25rem;
   font-weight: bold;
   padding-left: 1rem;
-  color: #282828;
+  color: #5c4033;
 }
 
 .headings {
@@ -71,7 +70,7 @@ li {
 }
 
 button {
-  background-color: #2670d1;
+  background-color: #282828;
   border: none;
   color: white;
   padding: 8px 24px;
@@ -79,12 +78,14 @@ button {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: royalblue;
+  background-color: #5c4033;
+  padding: 8px 24px;
+  transition: background-color 0.3s ease-out;
 }
 
 .content-right {
@@ -138,7 +139,7 @@ input[type="search"]::placeholder {
 .right-bottom > div {
   max-height: 60rem;
   max-width: 60rem;
-  padding: 2vh;
+  padding: 2.5vh;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
