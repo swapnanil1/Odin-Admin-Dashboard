@@ -19,6 +19,7 @@ span {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
+
 a {
   color: #ebdbb2;
   text-decoration: none;
@@ -45,11 +46,12 @@ li {
 .headings {
   font-size: 1.25rem;
   font-weight: bold;
+  color: #ebdbb2;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 0.25fr 1fr;
+  grid-template-columns: 0.2fr 1fr;
 }
 
 .content-left {
@@ -100,16 +102,43 @@ button:hover {
   background-color: #d5c492;
   color: #282828;
 }
-
+.right-top .greeting {
+  font-size: 1rem;
+  display: flex;
+  font-weight: bold;
+}
+.subtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.5rem;
+  font-weight: normal;
+  margin-left: 0.5rem;
+  height: min-content;
+}
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.large-bold-text {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
 .right-top ul {
   display: grid;
-  grid-template-columns: 4fr repeat(3, minmax(0, 1fr));
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 4fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: min-content 1fr;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+img {
+  width: 75px;
+  height: 75px;
 }
 
 .right-top input {
-  width: 95%;
+  width: 85%;
 }
 
 input[type="search"] {
@@ -149,15 +178,29 @@ input[type="search"]::placeholder {
   grid-column-start: 3;
   grid-column-end: 4;
   display: grid;
-  gap: 1rem;
+  gap: 10px;
 }
 
-.right-sidebar > * {
+.right-sidebar > ul {
   padding: 0.2rem;
   box-shadow: rgba(235, 219, 178, 0.3) 0px 0px 0px 3px;
 }
-
+.right-sidebar > ul > li {
+  padding: 4px;
+}
 .Announcements p,
-.Trending p {
+.trending p {
   font-size: 0.75rem;
+  font-weight: 400;
+}
+.trending * {
+  background-color: #d5c492;
+  color: #5c4033;
+  font-size: 1rem;
+  height: min-content;
+}
+.trending li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
