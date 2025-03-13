@@ -102,11 +102,13 @@ button:hover {
   background-color: #d5c492;
   color: #282828;
 }
+
 .right-top .greeting {
   font-size: 1rem;
   display: flex;
   font-weight: bold;
 }
+
 .subtext {
   display: flex;
   flex-direction: column;
@@ -116,14 +118,17 @@ button:hover {
   margin-left: 0.5rem;
   height: min-content;
 }
+
 .small-bold-text {
   font-size: 1rem;
   font-weight: bold;
 }
+
 .large-bold-text {
   font-size: 1.5rem;
   font-weight: bolder;
 }
+
 .right-top ul {
   display: grid;
   grid-template-columns: 4fr 0.5fr 0.5fr 0.5fr;
@@ -132,6 +137,7 @@ button:hover {
   align-items: center;
   justify-content: space-evenly;
 }
+
 img {
   width: 75px;
   height: 75px;
@@ -165,11 +171,20 @@ input[type="search"]::placeholder {
   color: #f5f5f5;
 }
 
-.right-bottom > div {
+.right-bottom>div {
   max-height: 60rem;
   max-width: 60rem;
   padding: 2.5vh;
+  overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.right-bottom>div:hover {
+  box-shadow:
+    -3px 0px 3px rgba(235, 219, 178, 0.44),
+    0px 3px 3px rgba(235, 219, 178, 0.44);
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
 }
 
 .right-sidebar-container {
@@ -181,24 +196,28 @@ input[type="search"]::placeholder {
   gap: 10px;
 }
 
-.right-sidebar > ul {
+.right-sidebar>ul {
   padding: 0.2rem;
   box-shadow: rgba(235, 219, 178, 0.3) 0px 0px 0px 3px;
 }
-.right-sidebar > ul > li {
+
+.right-sidebar>ul>li {
   padding: 4px;
 }
+
 .Announcements p,
 .trending p {
   font-size: 0.75rem;
   font-weight: 400;
 }
+
 .trending * {
   background-color: #d5c492;
   color: #5c4033;
   font-size: 1rem;
   height: min-content;
 }
+
 .trending li {
   display: flex;
   flex-wrap: wrap;
