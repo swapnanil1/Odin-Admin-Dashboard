@@ -171,7 +171,7 @@ input[type="search"]::placeholder {
   color: #f5f5f5;
 }
 
-.right-bottom>div {
+.right-bottom > div {
   max-height: 60rem;
   max-width: 60rem;
   padding: 2.5vh;
@@ -179,9 +179,8 @@ input[type="search"]::placeholder {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-.right-bottom>div:hover {
-  box-shadow:
-    -3px 0px 3px rgba(235, 219, 178, 0.44),
+.right-bottom > div:hover {
+  box-shadow: -3px 0px 3px rgba(235, 219, 178, 0.44),
     0px 3px 3px rgba(235, 219, 178, 0.44);
   transform: scale(1.02);
   transition: transform 0.2s ease-in-out;
@@ -196,12 +195,12 @@ input[type="search"]::placeholder {
   gap: 10px;
 }
 
-.right-sidebar>ul {
+.right-sidebar > ul {
   padding: 0.2rem;
   box-shadow: rgba(235, 219, 178, 0.3) 0px 0px 0px 3px;
 }
 
-.right-sidebar>ul>li {
+.right-sidebar > ul > li {
   padding: 4px;
 }
 
